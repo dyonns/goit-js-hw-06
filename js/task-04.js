@@ -1,18 +1,18 @@
 
 let counterValue = 0;
 
-const removeListenerBtn = document.querySelector('[data-action="decrement"]');
-const addListenerBtn = document.querySelector('[data-action="increment"]');
+const decrementBtn = document.querySelector('[data-action="decrement"]');
+const incrementBtn = document.querySelector('[data-action="increment"]');
 
 const add = () => {
     counterValue += 1;
-    document.querySelector('#value').innerHTML = counterValue;
+    document.querySelector('#value').textContent = counterValue;
 };
 
 const sub = () => {
     counterValue -= 1;
-    document.querySelector('#value').innerHTML = counterValue;
+    document.querySelector('#value').textContent = counterValue;
 };
 
-addListenerBtn.addEventListener("click", add);
-removeListenerBtn.addEventListener("click", sub);
+incrementBtn.addEventListener("click", add);
+decrementBtn.addEventListener("click", sub);

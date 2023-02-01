@@ -10,6 +10,6 @@ const body = document.body;
 
 changer.addEventListener("click", () => {
   colorName.innerHTML = getRandomHexColor();
-  body.style.backgroundColor = getRandomHexColor();
+  body.style.backgroundColor = colorName.innerHTML;
   console.log(body.style.backgroundColor)
 });
