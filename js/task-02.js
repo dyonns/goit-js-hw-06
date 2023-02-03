@@ -10,13 +10,6 @@ const ingredients = [
 
 const items  = document.querySelector("ul#ingredients")
 
-
-
-//   const markup = ingredients
-// .map((ingredient) => `<li class="item">${ingredient}</li>`)
-// .join("");
-
-
 const arr = [];
 
 ingredients.forEach((ingredient) => {
@@ -26,6 +19,5 @@ ingredients.forEach((ingredient) => {
   arr.push(list);
 })
 
-console.log(arr)
 
-items.insertAdjacentHTML("beforeend", arr.join(""));
+items.append(...arr);
